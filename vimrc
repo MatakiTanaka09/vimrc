@@ -72,6 +72,10 @@ let g:syntastic_mode_map = {
 " vue
 "------------------------------------
 autocmd FileType vue syntax sync fromstart
+set ttyfast
+set lazyredraw
+let g:vue_disable_pre_processors=1
+
 let g:ft = ''
 function! NERDCommenter_before()
   if &ft == 'vue'
